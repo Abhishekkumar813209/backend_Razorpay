@@ -36,7 +36,7 @@ export const paymentVerification = async(req,res) =>{
             razorpay_signature
         })
         res.redirect(
-            `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
+            `https://654e7ec34389ab0db60f602d--remarkable-flan-4bbf59.netlify.app/paymentsuccess?reference=${razorpay_payment_id}`
         )
     }else{
         res.status(400).json({
